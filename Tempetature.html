@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+class Tempetature{
+    doC;
+    doF;
+    CtoF;
+    FtoC;
+    constructor(doC,doF) {
+        this.doC = doC;
+        this.doF = doF;
+        this.CtoF =(this.doC*1.8000)+32;
+        this.FtoC = (5/9)*(this.doF-32);
+
+    }
+}
+let Tempetature1 = new Tempetature(25,75);
+document.write('độ c sang f là ' +Tempetature1.CtoF +'<br>');
+document.write('độ f sang c là ' +Tempetature1.FtoC);
+</script>
+</body>
+</html>
